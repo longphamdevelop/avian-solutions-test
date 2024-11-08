@@ -1,0 +1,93 @@
+:root {
+  /* font variable */
+  --font-family: "Poppins", sans-serif;
+  --font-style: normal;
+
+  --font-size-title: 19.98px;
+  --font-size-label: 11.66px;
+  --font-size-searchbox: 9.99px;
+  --font-size-price: 26.64px;
+
+  --font-weight-title: 600;
+  --font-weight-label: 400;
+  --font-weight-searchbox: 400;
+  --font-weight-price: 500;
+
+  --line-height-title: 29.98px;
+  --line-height-label: 17.49px;
+  --line-height-searchbox: 14.99px;
+  --line-height-price: 39.97px;
+
+  /* color variable */
+  --foreground-green: #1fcb4f;
+  --foreground-dark-gray: #a9a9a9;
+  --foreground-spanish-gray: #9e9e9e;
+  --foreground-white: #ffffff;
+  --foreground-sunglow: #ffc01e;
+  --background-charcoal: #1a1c22;
+  --background-gunmetal: #282c35;
+
+  /* size variable */
+  --width-sider: 213.16px;
+  --width-layout: 1199px;
+  --width-searchbox: 214.82px;
+  --width-card: 214.82px;
+  --width-logo: 156.93px;
+  --height-layout: 852.62px;
+  --height-searchbox: 33.31px;
+  --height-card: 95.75px;
+  --height-logo: 36px;
+
+  /* border variable */
+  --radius-layout: 15px;
+  --radius-searchbox: 6.66px;
+  --radius-card: 8.33px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-style: var(--font-style);
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+.layout {
+  margin: 40px auto;
+  width: var(--width-layout);
+  height: var(--height-layout);
+  border-radius: var(--radius-layout);
+  overflow: hidden;
+  display: flex;
+}
+
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sider,
+.header,
+.card {
+  background-color: var(--background-charcoal);
+}
+
+.searchbox,
+.content {
+  background-color: var(--background-gunmetal);
+}

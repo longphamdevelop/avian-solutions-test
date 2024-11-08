@@ -1,0 +1,96 @@
+.header {
+  height: 74.94px;
+  padding: 0 24.15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-title {
+  color: var(--foreground-white);
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-title);
+  line-height: var(--line-height-title);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 19.98px;
+}
+
+.search-box {
+  width: var(--width-searchbox);
+  height: var(--height-searchbox);
+  border-radius: var(--radius-searchbox);
+  background-color: var(--background-gunmetal);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 12.49px;
+}
+
+.search-box > input,
+.search-box > button {
+  height: 100%;
+  background-color: transparent;
+}
+
+.search-box > input {
+  flex: 1;
+  color: var(--foreground-white);
+  font-family: var(--font-family);
+  font-style: var(--font-style);
+  font-weight: 400;
+  line-height: 14.99px;
+  font-size: 9.99px;
+}
+
+.search-box > input::placeholder {
+  color: var(--foreground-spanish-gray);
+}
+.search-box > button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+}
+
+.notify {
+  height: 19.98px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.notify:hover {
+  animation: shake 0.5s ease-in-out;
+}
+
+.avatar {
+  cursor: pointer;
+  height: 33.31px;
+  width: 33.31px;
+}
+
+.avatar > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8.33px;
+}
